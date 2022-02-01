@@ -1,0 +1,52 @@
+#VRML_SIM R2022a utf8
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.18555954856624346 -0.8300069093475612 0.5259811635136766 5.479388829894589
+  position -58.94092331011096 38.56765186689883 33.82664594941465
+}
+TexturedBackground {
+  luminosity 0
+  skybox FALSE
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 50 50
+  floorTileSize 1 1
+  floorAppearance Parquetry {
+    type "chequered"
+    IBLStrength 10000
+  }
+  wallThickness 1
+  wallHeight 2
+}
+Pedestrian {
+  translation -2.25 -0.01 1.27
+  enableBoundingObject TRUE
+}
+WoodenBox {
+  translation 0 0 1.76076
+  rotation 0.9741971500160842 -0.1948394300032169 0.11391887208255182 2.240601180386319e-18
+  size 2 2 2
+  mass 1000
+}
+WoodenBox {
+  translation -8.44868e-19 3.31 1.75071
+  rotation 0.9741971500160841 -0.19483943000321685 0.1139188720825518 2.2406011803863192e-18
+  name "wooden box(1)"
+  size 2 2 2
+  mass 1000
+}
+TeslaModel3 {
+  translation -21.8697 7.13968e-10 0.96715
+  rotation 8.772390423298254e-06 -0.999999999961521 5.525338292046368e-08 0.017555310777562158
+  controller "front_controllert_range_finder"
+  controllerArgs [
+    ""
+  ]
+  sensorsSlotFront [
+    DelphiESR {
+    }
+  ]
+}
